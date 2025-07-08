@@ -16,9 +16,11 @@ struct ContentView: View {
             if let selected = viewModel.selectedDay {
                 Text("Selected Day: \(selected.date.formatted(date: .long, time: .omitted))")
                     .padding()
+                    .foregroundColor(.black)
             }
         }
         .frame(maxHeight: .infinity, alignment: .top)
+        .background(.white)
     }
 }
 
